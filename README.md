@@ -1,4 +1,4 @@
-🚗 Parking Management System - PBO Java
+🚗 SIPARKIR - PBO Java
 
 📌 Deskripsi
 Proyek ini merupakan aplikasi manajemen parkir berbasis Java GUI (Swing) dengan penerapan konsep Pemrograman Berorientasi Objek (OOP). Aplikasi ini dibuat untuk memenuhi tugas besar/mata kuliah Pemrograman Berorientasi Objek (PBO).
