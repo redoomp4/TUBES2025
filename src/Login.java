@@ -102,7 +102,7 @@ public class Login extends JFrame {
                         dispose();
 
                         SwingUtilities.invokeLater(() -> {
-                            BookingForm bookingForm = new BookingForm(loggedInUserId);
+                            Booking bookingForm = new Booking(loggedInUserId);
                             bookingForm.setExtendedState(JFrame.MAXIMIZED_BOTH);
                             bookingForm.setVisible(true);
                         });

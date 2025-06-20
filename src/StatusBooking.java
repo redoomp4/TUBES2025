@@ -48,7 +48,7 @@
 
                 if (label.equals("Booking")) {
                     btn.addActionListener(e -> {
-                        BookingForm bookingForm = new BookingForm(UserSession.getUserId());
+                        Booking bookingForm = new Booking(UserSession.getUserId());
                         bookingForm.setExtendedState(JFrame.MAXIMIZED_BOTH);
                         bookingForm.setVisible(true);
                         setVisible(false);

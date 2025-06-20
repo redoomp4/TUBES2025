@@ -51,7 +51,7 @@ public class Report extends JFrame {
             topButtons.add(btn);
             if (label.equals("Booking")) {
                 btn.addActionListener(e -> {
-                    BookingForm bookingForm = new BookingForm(UserSession.getUserId());
+                    Booking bookingForm = new Booking(UserSession.getUserId());
                     bookingForm.setExtendedState(JFrame.MAXIMIZED_BOTH); // pastikan fullscreen
                     bookingForm.setVisible(true);
                     setVisible(false);
@@ -387,7 +387,7 @@ public class Report extends JFrame {
             // Simulasi login berhasil
             int userId = 3; // Misalnya ini hasil dari database
             UserSession.setUserId(userId);
-            new BookingForm(userId);
+            new Booking(userId);
         });
     }
 

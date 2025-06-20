@@ -7,12 +7,12 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-public class BookingForm extends JFrame {
+public class Booking extends JFrame {
     private JTextField namaField, platField, lokasiField;
     private JComboBox<String> tipeCombo;
     private JSpinner tanggalSpinner, jamSpinner;
 
-    public BookingForm(String nama, String plat, String lokasi, String tipe, Date tanggal, Date jam) {
+    public Booking(String nama, String plat, String lokasi, String tipe, Date tanggal, Date jam) {
         this.namaField = new JTextField(nama);
         this.platField = new JTextField(plat);
         this.lokasiField = new JTextField(lokasi);
@@ -21,7 +21,7 @@ public class BookingForm extends JFrame {
         this.jamSpinner = new JSpinner(new SpinnerDateModel(jam, null, null, Calendar.HOUR_OF_DAY));
     }
 
-    public BookingForm(int user_id) {
+    public Booking(int user_id) {
         UserSession.setUserId(user_id);
         setTitle("SiParkir - Booking");
         setSize(1100, 750);
@@ -439,7 +439,7 @@ public class BookingForm extends JFrame {
             // Simulasi login berhasil
             int userId = 3; // Misalnya ini hasil dari database
             UserSession.setUserId(userId);
-            new BookingForm(userId);
+            new Booking(userId);
         });
 
     }
